@@ -3,9 +3,25 @@
 module.exports = {
   content: ["./src/**/*.{html,js}", "./dist/**/*.{html,js}"],
   theme: {
+    letterSpacing: {
+      mucho: ".5rem",
+    },
     extend: {
+      height: {
+        inherit: "inherit",
+      },
+      objectPosition: {
+        sliderPosition: "50% 0%",
+      },
+      width: {
+        inherit: "inherit",
+      },
+      gridTemplateColumns: {
+        sliderContainer: "50px minmax(0, 1fr) 50px",
+      },
       backgroundImage: {
         imagenFondo: "url('/src/assets/fondo.png')",
+        imagenFondo2: "url('/src/assets/Groupfondo2.png')",
       },
       colors: {
         first: "#1d56b8",
