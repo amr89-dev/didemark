@@ -1,10 +1,19 @@
 const $menuItems = document.querySelector("#menu");
 const $btnMenu = document.getElementById("btn-menu");
+const $achors = document.querySelectorAll("#menu a");
+console.log($achors);
 
 $btnMenu.addEventListener("click", (e) => {
   $btnMenu.firstElementChild.classList.toggle("hidden");
   $btnMenu.lastElementChild.classList.toggle("hidden");
   $menuItems.classList.toggle("hidden");
+});
+
+document.addEventListener("click", (e) => {
+  if (!e.target.matches("#menu a")) return false;
+  $btnMenu.firstElementChild.classList.toggle("hidden");
+  $btnMenu.lastElementChild.classList.toggle("hidden");
+  $menuItems.classList.add("hidden");
 });
 
 window.addEventListener("scroll", (e) => {

@@ -13,12 +13,10 @@
 
   <header class="fixed  left-0 bottom-4 z-50 w-full  flex flex-col items-center ">
     <nav class="w-full hidden fixed  left-0 bottom-20 " id="menu">
-      <a class="aMenu " href="#">Inicio</a>
-      <a class="aMenu" href="#">Sobre Nosotros</a>
-      <a class="aMenu" href="#">¿Qué ofrecemos?</a>
-      <a class="aMenu" href="#">Servicios</a>
-      <a class="aMenu" href="#">Nuestro Trabajo</a>
-      <a class="aMenu" href="#">Preguntas Frecuentes</a>
+      <a class="aMenu" href="#presentation">Sobre Nosotros</a>
+      <a class="aMenu" href="#ofrecemos">¿Qué ofrecemos?</a>
+      <a class="aMenu" href="#portafolio">Nuestro Trabajo</a>
+      <a class="aMenu" href="#contact-form">Preguntas Frecuentes</a>
     </nav>
     <button id="btn-menu" class="py-2 px-1 pb-1 rounded-xl bg-third animate-bounce transition-all ">
       <svg width="32" height="32" class=" fill-first" viewBox="0 0 32 20" fill="none"
@@ -187,31 +185,30 @@
       <cite class="titulo">Eduard Degas</cite>
     </section>
     <!-- GALERIA SECTION -->
-    <section class="">
+    <section class="mb-8">
       <h3 class="titulo">Galeria</h3>
-      <div id="slider-container"
-        class="w-11/12 h-96 mb-4 bg-blue-700 m-auto grid grid-cols-sliderContainer items-center">
+      <div id="slider-container" class="w-11/12 h-96 mb-4 m-auto grid grid-cols-sliderContainer items-center">
         <img id="left" class="cursor-pointer w-1/2 justify-self-start" src="/src/assets/leftArrow.svg" alt="left">
 
         <article class="relative w-full h-3/5 col-start-{2} col-end-{3}  flex items-centerjustify-self-center">
 
-          <div id="slider-slide" class="absolute top-0 left-0 bottom-0 right-0">
-            <img class="w-full h-auto mx-auto object-contain object-sliderPosition "
+          <div id="slider-slide" class="absolute top-0 left-0 bottom-0 right-0 w-full h-full">
+            <img class="w-inherit h-inherit object-sliderPosition object-contain mx-auto rounded-xl"
               src="https://placeimg.com/480/480/animals" alt="any">
           </div>
-          <div id="slider-slide" class="absolute top-0 left-0 hidden">
-            <img class="w-inherit h-inherit object-contain object-sliderPosition mx-auto"
+          <div id="slider-slide" class="absolute top-0 left-0 bottom-0 right-0 w-full h-full hidden">
+            <img class="w-inherit h-inherit object-sliderPosition object-contain mx-auto"
               src="https://placeimg.com/480/480/arch" alt="animals">
           </div>
-          <div id="slider-slide" class="absolute top-0 left-0 hidden">
+          <div id="slider-slide" class="absolute top-0 left-0 bottom-0 right-0 w-full h-full hidden">
             <img class="w-inherit h-inherit object-contain object-sliderPosition mx-auto"
               src="https://placeimg.com/480/480/nature" alt="peole">
           </div>
-          <div id="slider-slide" class="absolute top-0 left-0 hidden">
+          <div id="slider-slide" class="absolute top-0 left-0 bottom-0 right-0 w-full h-full hidden">
             <img class="w-inherit h-inherit object-contain object-sliderPosition mx-auto"
               src="https://placeimg.com/480/480/people" alt="arch">
           </div>
-          <div id="slider-slide" class="absolute top-0 left-0 hidden">
+          <div id="slider-slide" class="absolute top-0 left-0 bottom-0 right-0 w-full h-full hidden">
             <img class="w-inherit h-inherit object-contain object-sliderPosition mx-auto"
               src="https://placeimg.com/480/480/tech" alt="arch">
           </div>
@@ -220,6 +217,19 @@
         <img id="right" class="cursor-pointer w-1/2 justify-self-end" src="/src/assets/rightArrow.svg" alt="right">
       </div>
 
+    </section>
+    <!-- FORM SECTION -->
+    <section id="contact-form" class="mb-8">
+      <div class="w-11/12 h-auto bg-blue-200 mx-auto rounded-xl">
+        <h3 class="titulo">Dejanos un mensaje</h3>
+        <form class="flex flex-col p-6">
+          <input type="text" placeholder="Nombre:" class="h-8 mb-4 p-4 rounded">
+          <input type="email" placeholder="Correo Electrónico:" class="h-8 p-4 mb-4 rounded">
+          <textarea name="cometario" id="" cols="30" rows="10" placeholder="Dejamos tu comentario:"
+            class="px-4 pt-1 rounded mb-4 resize-none"></textarea>
+          <button type="submit" class="bg-first p-2 text-lg text-white font-robot rounded">Enviar</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="w-full h-6 bg-blue-400"> ESTE ES EL PIE DE PAGINA</footer>
