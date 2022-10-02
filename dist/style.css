@@ -711,12 +711,20 @@ video {
   width: inherit;
 }
 
+.w-3\/4{
+  width: 75%;
+}
+
 .min-w-full{
   min-width: 100%;
 }
 
 .max-w-full{
   max-width: 100%;
+}
+
+.max-w-3xl{
+  max-width: 48rem;
 }
 
 .transform{
