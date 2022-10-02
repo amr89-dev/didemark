@@ -769,6 +769,16 @@ video {
   min-width: 100%;
 }
 
+.max-w-screen-lg{
+  max-width: 1024px;
+}
+
+.max-w-fit{
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
