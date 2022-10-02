@@ -9,7 +9,7 @@
   },
   "author": "amr.dev",
   "license": "MIT",
-  "dependencies": {
-    "tailwindcss": "3.1.8"
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
   }
 }
