@@ -11,7 +11,9 @@
 
 <body class="">
 
-  <header class="fixed lg:absolute lg:top-0  lg:h-2 left-0 bottom-4 z-50 w-full  flex flex-col items-center ">
+  <header
+    class="fixed lg:absolute lg:top-0  lg:max-h-min left-0 bottom-4 z-50 w-full  flex flex-col  items-center lg:bg-third ">
+
     <button id="btn-menu" class="py-2 px-1 pb-1 rounded-xl bg-third animate-bounce transition-all lg:hidden">
       <svg width="32" height="32" class=" fill-first" viewBox="0 0 32 20" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -26,8 +28,8 @@
       </svg>
     </button>
 
-    <nav class="w-full hidden lg:flex lg:flex-row   left-0  bottom-20 lg:top-0 " id="menu">
-      <a class="aMenu" href="#presentation">Sobre Nosotros</a>
+    <nav class="min-w-full lg:min-w-[70%] hidden lg:flex lg:flex-row  left-0  bottom-20 lg:top-0 " id="menu">
+      <a class="aMenu " href="#presentation">Sobre Nosotros</a>
       <a class="aMenu" href="#ofrecemos">¿Qué ofrecemos?</a>
       <a class="aMenu" href="#portafolio">Nuestro Trabajo</a>
       <a class="aMenu" href="#contact-form">Preguntas Frecuentes</a>
